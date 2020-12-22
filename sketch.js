@@ -17,6 +17,7 @@ function preload() {
     getBgImage();
     flySound=loadSound("sprites/fly.mp3");
     themeSongSound=loadSound("sprites/themeSong.mp3");
+    b_g=loadImage("sprites/background.png");
 }
 
 function setup(){
@@ -50,10 +51,9 @@ function setup(){
 }
 
 function draw(){
-
-    if(backgroundImg){
-        background(backgroundImg);
-    }
+    
+            background(b_g);
+    
     noStroke();
     textSize(35);   
     fill("white")
